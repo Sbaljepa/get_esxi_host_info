@@ -1,0 +1,316 @@
+[
+      {
+            "structure": [
+                  {
+                        "Type": "SDP",
+                        "Name": "aaaa",
+                        "Version": "zzzz"
+                  },
+                  [
+                        {
+                              "Components": [
+                                    {
+                                          "Type": "Hardware",
+                                          "Serial no": "CZ210501G0",
+                                          "Bios": "A42",
+                                          "Vendor": "HPE",
+                                          "Model": "ProLiant DL385 Gen10 Plus",
+                                          "UUID": "32343150-3837-5a43-3231-303530314730",
+                                          "configuration": [
+                                                {
+                                                      "Type": "License",
+                                                      "Name": "vSphere 7 Essentials",
+                                                      "Value": "5M4CN-0GLE1-M88GN-0K22K-8XL3N"
+                                                },
+                                                {
+                                                      "Type": "CPU",
+                                                      "Model": "AMD EPYC 7282 16-Core Processor                ",
+                                                      "Cores": 32,
+                                                      "Threads": 64
+                                                },
+                                                {
+                                                      "Type": "RAM",
+                                                      "value": "Memory",
+                                                      "Memory": 192
+                                                },
+                                                {
+                                                      "Type": "storage",
+                                                      "Name": "OS1",
+                                                      "Size": 1661,
+                                                      "SSD": true,
+                                                      "value": "VMFS"
+                                                },
+                                                {
+                                                      "Type": "GPU",
+                                                      "Name": "NVIDIA Corporation",
+                                                      "Model": "GP102GL [Tesla P40]",
+                                                      "Key": "basic"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "Type": "Virtualization",
+                                          "Name": "VMWare",
+                                          "Host_name": "host.monkey.acht.athena.zone",
+                                          "version": "7.0.1",
+                                          "Configuration": {
+                                                "Name": "Network",
+                                                "NIC": 6
+                                          }
+                                    },
+                                    [
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-worker-4",
+                                                "HostName": "k8s-worker-4.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:51:08.656965+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 8
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 48
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 66,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "172.30.60.104",
+                                                            "EthernetCards": 3
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-worker-3",
+                                                "HostName": "k8s-worker-3.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:52:28.770991+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 8
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 48
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 1465,
+                                                            "Disks": 2
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "172.30.60.103",
+                                                            "EthernetCards": 3
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-worker-2",
+                                                "HostName": "k8s-worker-2.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:53:58.745073+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 8
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 48
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 66,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "172.30.60.102",
+                                                            "EthernetCards": 3
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-worker-1",
+                                                "HostName": "k8s-worker-1.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:55:28.751785+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 8
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 36
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 101,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "10.10.10.101",
+                                                            "EthernetCards": 3
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-ansible",
+                                                "HostName": "k8s-ansible.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:49:13.749735+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 4
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 8
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 410,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "10.113.183.50",
+                                                            "EthernetCards": 2
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-storage-1",
+                                                "HostName": "k8s-storage-1.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:49:28.714293+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 8
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 8
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 410,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "10.10.10.91",
+                                                            "EthernetCards": 2
+                                                      }
+                                                ]
+                                          },
+                                          {
+                                                "Type": "Virtual Machine",
+                                                "Name": "k8s-master",
+                                                "HostName": "k8s-master.dmp",
+                                                "configuration": [
+                                                      {
+                                                            "Type": "Kernal",
+                                                            "OS": "CentOS 7 (64-bit)",
+                                                            "Boot Time": "2022-01-31 12:49:58.702730+00:00"
+                                                      },
+                                                      {
+                                                            "Type": "CPU",
+                                                            "Name": "Cores",
+                                                            "Capacity": 2
+                                                      },
+                                                      {
+                                                            "Type": "RAM",
+                                                            "Name": "Memory",
+                                                            "Memory": 8
+                                                      },
+                                                      {
+                                                            "Type": "Storage",
+                                                            "Storage": 73,
+                                                            "Disks": 1
+                                                      },
+                                                      {
+                                                            "Type": "Network",
+                                                            "IP": "10.10.10.100",
+                                                            "EthernetCards": 1
+                                                      }
+                                                ]
+                                          }
+                                    ],
+                                    {
+                                          "Applications": [
+                                                {
+                                                      "Type": "Service",
+                                                      "Name": "Docker",
+                                                      "Version": "xxxxx"
+                                                },
+                                                {
+                                                      "Type": "Service",
+                                                      "Name": "Kubernetes",
+                                                      "Version": "yyyyy"
+                                                },
+                                                {
+                                                      "Type": "Service",
+                                                      "Name": "Helm",
+                                                      "Version": "bbbb"
+                                                },
+                                                {
+                                                      "Type": "Service",
+                                                      "Name": "Helm Apps",
+                                                      "Details": "cccc"
+                                                }
+                                          ]
+                                    }
+                              ]
+                        }
+                  ]
+            ]
+      }
+]
