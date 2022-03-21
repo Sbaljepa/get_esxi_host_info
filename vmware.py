@@ -32,34 +32,13 @@ class vmware:
             committed = uncommitted + unshared
             numCpu = vm.summary.config.numCpu
 
-            vm_info = {}
-            #config_vm = {}
-            vm_kernal = {}
-            vm_strg = {}
-            vm_mem = {}
-            vm_cpu = {}
-            vm_nw = {}
-
-            vm_info['Type'] = "Virtual Machine"
-            vm_info['Name'] = name
-           # vm_info['host'] = host
-            vm_info['HostName'] = hostName
-            vm_kernal['Type'] = "Kernal"
-            vm_kernal['OS'] = guestFullName
-            vm_kernal['Boot Time'] = bootTime
-            vm_nw['Type'] = "Network"
-            vm_nw['IP'] = ipAddress
-            vm_nw['EthernetCards'] = numEthernetCards
-            vm_strg['Type'] = "Storage"
-            vm_strg['Storage'] = committed
-            vm_strg['Disks'] = numVirtualDisks
-            vm_mem['Type'] = "RAM"
-            vm_mem['Name'] = "Memory"
-            vm_mem['Memory'] = memorySizeMB
-            vm_cpu['Type'] = "CPU"
-            vm_cpu['Name'] = "Cores"
-            vm_cpu['Capacity'] = numCpu
-            #vm_cpu['git'] = git.read()
+            vm_info = {'Type': "Virtual Machine", 'Name': name, 'HostName': hostname}         
+            vm_kernal = {'Type': "kernal", 'OS': guestFullName, 'Boot Time': bootTime}
+            vm_nw = {'Type': "NetWork", 'IP': ipAddress 'EthernetCards': numEthernetCards}
+            vm_strg = {'Type': "Storage", 'Storage': committed, 'Disks': numVirtualDisks}
+            vm_mem = {'Type': "RAM", 'Name': "Memory", 'Size': memorySizeMB}
+            vm_cpu = {'Type': "CPU", 'Name': "Cores", 'capacity':numCpu}
+                   
             config_vm = vm_kernal, vm_cpu,vm_mem,vm_strg, vm_nw
             vm_info['configuration'] = config_vm
             virtual.append(vm_info)
